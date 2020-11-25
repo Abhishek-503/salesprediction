@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html class="avada-html-layout-wide" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>var et_site_url='https://blog.arkieva.com';var et_post_id='3609';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>How Does My Open Order History Impact My Sales Prediction? - Supply Chain Link Blog - Arkieva</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective analysis, open order data needs to be recorded daily in an ERP system."/>
+<link rel="canonical" href="https://blog.arkieva.com/sales-prediction/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How Does My Open Order History Impact My Sales Prediction? - Supply Chain Link Blog - Arkieva" />
+<meta property="og:description" content="An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective analysis, open order data needs to be recorded daily in an ERP system." />
+<meta property="og:url" content="https://blog.arkieva.com/sales-prediction/" />
+<meta property="og:site_name" content="Supply Chain Link Blog - Arkieva" />
+<meta property="article:publisher" content="https://www.facebook.com/arkieva/" />
+<meta property="article:tag" content="sales forecast methods" />
+<meta property="article:tag" content="sales forecasting examples" />
+<meta property="article:tag" content="sales forecasting models" />
+<meta property="article:tag" content="sales predictor ratio" />
+<meta property="article:tag" content="sales projection example" />
+<meta property="article:section" content="Forecasting" />
+<meta property="article:published_time" content="2018-03-02T19:53:32-05:00" />
+<meta property="article:modified_time" content="2019-04-14T03:09:09-04:00" />
+<meta property="og:updated_time" content="2019-04-14T03:09:09-04:00" />
+<meta property="og:image" content="https://blog.arkieva.com/wp-content/uploads/2018/03/sales-prediction-social-media.png" />
+<meta property="og:image:secure_url" content="https://blog.arkieva.com/wp-content/uploads/2018/03/sales-prediction-social-media.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="575" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective analysis, open order data needs to be recorded daily in an ERP system." />
+<meta name="twitter:title" content="How Does My Open Order History Impact My Sales Prediction? - Supply Chain Link Blog - Arkieva" />
+<meta name="twitter:site" content="@Arkieva" />
+<meta name="twitter:image" content="https://blog.arkieva.com/wp-content/uploads/2018/03/sales-prediction-social-media.png" />
+<meta name="twitter:creator" content="@hellenoti" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.arkieva.com/#organization","name":"Arkieva","url":"https://blog.arkieva.com/","sameAs":["https://www.facebook.com/arkieva/","https://www.instagram.com/arkievasop/","https://www.linkedin.com/company/arkieva","https://www.youtube.com/user/arkieva","https://twitter.com/Arkieva"],"logo":{"@type":"ImageObject","@id":"https://blog.arkieva.com/#logo","url":"https://blog.arkieva.com/wp-content/uploads/2016/08/Arkieva-full-color-large.png","width":925,"height":410,"caption":"Arkieva"},"image":{"@id":"https://blog.arkieva.com/#logo"}},{"@type":"WebSite","@id":"https://blog.arkieva.com/#website","url":"https://blog.arkieva.com/","name":"Supply Chain Link Blog - Arkieva","publisher":{"@id":"https://blog.arkieva.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://blog.arkieva.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://blog.arkieva.com/sales-prediction/#primaryimage","url":"https://blog.arkieva.com/wp-content/uploads/2018/03/sales-prediction-social-media.png","width":1024,"height":575,"caption":"sales-prediction"},{"@type":"WebPage","@id":"https://blog.arkieva.com/sales-prediction/#webpage","url":"https://blog.arkieva.com/sales-prediction/","inLanguage":"en-US","name":"How Does My Open Order History Impact My Sales Prediction? - Supply Chain Link Blog - Arkieva","isPartOf":{"@id":"https://blog.arkieva.com/#website"},"primaryImageOfPage":{"@id":"https://blog.arkieva.com/sales-prediction/#primaryimage"},"datePublished":"2018-03-02T19:53:32-05:00","dateModified":"2019-04-14T03:09:09-04:00","description":"An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective analysis, open order data needs to be recorded daily in an ERP system."},{"@type":"Article","@id":"https://blog.arkieva.com/sales-prediction/#article","isPartOf":{"@id":"https://blog.arkieva.com/sales-prediction/#webpage"},"author":{"@id":"https://blog.arkieva.com/#/schema/person/bf29f5d8387c60aa79a23c8b035c13db"},"headline":"How Does My Open Order History Impact My Sales Prediction?","datePublished":"2018-03-02T19:53:32-05:00","dateModified":"2019-04-14T03:09:09-04:00","commentCount":0,"mainEntityOfPage":{"@id":"https://blog.arkieva.com/sales-prediction/#webpage"},"publisher":{"@id":"https://blog.arkieva.com/#organization"},"image":{"@id":"https://blog.arkieva.com/sales-prediction/#primaryimage"},"keywords":"sales forecast methods,sales forecasting examples,sales forecasting models,sales predictor ratio,sales projection example","articleSection":"Demand Planning,Forecasting"},{"@type":["Person"],"@id":"https://blog.arkieva.com/#/schema/person/bf29f5d8387c60aa79a23c8b035c13db","name":"Hellen Oti-Yeboah","image":{"@type":"ImageObject","@id":"https://blog.arkieva.com/#authorlogo","url":"https://blog.arkieva.com/wp-content/uploads/2015/09/hellen-headshot.jpg","caption":"Hellen Oti-Yeboah"},"description":"Hellen is the Marketing Manager at Arkieva, managing all aspects of Arkieva\u2019s marketing initiatives. A passionate technology enthusiast, Hellen is always looking for new ways to use technology to improve results and connect with prospective and existing clients. When she's not strategizing or implementing cool marketing ideas at Arkieva, Hellen enjoys experimental cooking with her 'newly created Masterchef recipes.'","sameAs":["https://twitter.com/hellenoti"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//a.opmnstr.com' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Supply Chain Link Blog - Arkieva &raquo; Feed" href="https://blog.arkieva.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Supply Chain Link Blog - Arkieva &raquo; Comments Feed" href="https://blog.arkieva.com/comments/feed/" />
+		
+		
+		
+		
+				<link rel="alternate" type="application/rss+xml" title="Supply Chain Link Blog - Arkieva &raquo; How Does My Open Order History Impact My Sales Prediction? Comments Feed" href="https://blog.arkieva.com/sales-prediction/feed/" />
+
+		<meta property="og:title" content="How Does My Open Order History Impact My Sales Prediction?"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://blog.arkieva.com/sales-prediction/"/>
+		<meta property="og:site_name" content="Supply Chain Link Blog - Arkieva"/>
+		<meta property="og:description" content="Open order history plays an important role in demand planning, especially for business-to-business companies.
+What is an Open Order?
+An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective"/>
+
+									<meta property="og:image" content="https://blog.arkieva.com/wp-content/uploads/2018/03/sales-prediction-social-media.png"/>
+									<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.arkieva.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='tweeetshare_custome_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tweeetshare_notice_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/notice.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tweeetshare_theme_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/tweetsharestyle.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tweeetshare_tweet_box_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/tweetbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tweeetshare_statistics_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/statistics.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tweeetshare_statistics_st-css'  href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_poll_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/poll/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_trivia_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/trivia/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_personality_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/personality/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_survey_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/survey/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_slideshow_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/slideshow/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='opinionStage_form_oswp_style_css_set-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/gutenberg/form/dist/blocks.style.build.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bcct_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/better-click-to-tweet/assets/css/styles.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/captcha/css/front_end_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-includes/css/dashicons.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/captcha/css/desktop_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='uaf_client_css-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/useanyfont/uaf.css?ver=1564766389' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='inbound-shortcodes-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/cta/shared/shortcodes/css/frontend-render.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='et_monarch-css-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/monarch/css/style.css?ver=1.4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='avada-parent-stylesheet-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/style.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='avada-stylesheet-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/css/style.min.css?ver=5.9' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='avada-IE-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/css/ie.min.css?ver=5.9' type='text/css' media='all' />
+<style id='avada-IE-inline-css' type='text/css'>
+.avada-select-parent .select-arrow{background-color:#ffffff}
+.select-arrow{background-color:#ffffff}
+</style>
+<![endif]-->
+<link rel='stylesheet' id='fusion-dynamic-css-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/fusion-styles/156ebeb5bc4068d99f5adb758820b84a.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/jetpack/css/jetpack.css?ver=7.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/font.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/js/jquery-3.1.1.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/js/jquery-ui.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/js/custom.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/tweetshare-click-to-tweet/assets/css/font.js?ver=5.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"[Webinar] Using What-If Scenarios to Improve Forecasts For New Products \u2013 Lessons Learned From the Popeye\u2019s Chicken Sandwich Shortage | 3.25.20 | 11am - 12pm ET","button_link":"https:\/\/arkieva.com\/webinars\/what-if-scenario-analysis\/","button_label":"Learn More","button_target":"_self"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js?ver=5.3.2'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.opmnstr.com/app/js/api.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cta_variation = {"cta_id":null,"admin_url":"https:\/\/blog.arkieva.com\/wp-admin\/admin-ajax.php","home_url":"https:\/\/blog.arkieva.com","split_testing":"1","sticky_cta":"1","page_tracking":"off"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/cta/assets/js/cta-variation.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var inbound_settings = {"post_id":"3609","post_type":"post","variation_id":"0","ip_address":"103.217.238.38","wp_lead_data":{"lead_id":null,"lead_email":null,"lead_uid":null,"lead_nonce":null},"admin_url":"https:\/\/blog.arkieva.com\/wp-admin\/admin-ajax.php","track_time":"2020\/03\/16 9:40:09","page_tracking":"off","search_tracking":"off","comment_tracking":"off","custom_mapping":[],"is_admin":"","ajax_nonce":"c0711258fd"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/cta/shared/assets/js/frontend/analytics/inboundAnalytics.min.js'></script>
+<link rel='https://api.w.org/' href='https://blog.arkieva.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.arkieva.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.arkieva.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://blog.arkieva.com/?p=3609' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.arkieva.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.arkieva.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;format=xml" />
+<style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#0b2387;
+  background-image:-moz-linear-gradient(top,#0b2387,#081a66);
+  background-image:-ms-linear-gradient(top,#0b2387,#081a66);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#0b2387),to(#081a66));
+  background-image:-webkit-linear-gradient(top,#0b2387,#081a66);
+  background-image:-o-linear-gradient(top,#0b2387,#081a66);
+  background-image:linear-gradient(top,#0b2387,#081a66);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@{Color}',endColorstr='@{DarkColor}',GradientType=0);
+}
+</style><!-- <meta name="NextGEN" version="3.2.10" /> -->
+<style type="text/css" id="et-social-custom-css">
+				 
+			</style>
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><link rel="icon" href="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/cropped-Favicon-arkieva-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/cropped-Favicon-arkieva-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/cropped-Favicon-arkieva-180x180.png" />
+<meta name="msapplication-TileImage" content="https://blog.arkieva.com/wp-content/uploads/2018/04/cropped-Favicon-arkieva-270x270.png" />
+
+		
+	<script type="text/javascript">
+		var doc = document.documentElement;
+		doc.setAttribute('data-useragent', navigator.userAgent);
+	</script>
+
+	<script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-60625734-1']);
+ _gaq.push(['_trackPageview']);
+setTimeout("_gaq.push(['_trackEvent', '30_seconds', 'read'])",30000);  // --additional line for adjusted bounce rate
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script><!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"EFfem1aM91i2vg", domain:"arkieva.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=EFfem1aM91i2vg" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript --></head>
+
+<body class="post-template-default single single-post postid-3609 single-format-standard et_bloom et_monarch fusion-image-hovers fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar fusion-disable-outline fusion-sub-menu-fade mobile-logo-pos-left layout-wide-mode has-sidebar fusion-top-header menu-text-align-right mobile-menu-design-modern fusion-show-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none fusion-search-form-classic fusion-avatar-square">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<div id="wrapper" class="">
+		<div id="home" style="position:relative;top:-1px;"></div>
+		
+			<header class="fusion-header-wrapper">
+				<div class="fusion-header-v3 fusion-logo-left fusion-sticky-menu- fusion-sticky-logo- fusion-mobile-logo-  fusion-mobile-menu-design-modern">
+					
+<div class="fusion-secondary-header">
+	<div class="fusion-row">
+					<div class="fusion-alignleft">
+				<div class="fusion-contact-info">Questions? Call: +1 877 722 7627<span class="fusion-header-separator">|</span><a href="mailto:inf&#111;&#64;&#97;&#114;kiev&#97;&#46;&#99;&#111;&#109;">inf&#111;&#64;&#97;&#114;kiev&#97;&#46;&#99;&#111;&#109;</a></div>			</div>
+							<div class="fusion-alignright">
+				<nav class="fusion-secondary-menu" role="navigation" aria-label="Secondary Menu"><ul id="menu-topmenu" class="menu"><li  id="menu-item-2753"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2753"  data-item-id="2753"><a  href="/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li><li  id="menu-item-2754"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2754"  data-item-id="2754"><a  href="http://www.arkieva.com/sop-self-funding/" class="fusion-bar-highlight"><span class="menu-text">Pricing</span></a></li><li  id="menu-item-2755"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2755"  data-item-id="2755"><a  href="http://www.arkieva.com/contacts/" class="fusion-bar-highlight"><span class="menu-text">Contact</span></a></li></ul></nav><nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" aria-label="Secondary Mobile Menu"></nav>			</div>
+			</div>
+</div>
+<div class="fusion-header-sticky-height"></div>
+<div class="fusion-header">
+	<div class="fusion-row">
+					<div class="fusion-logo" data-margin-top="10px" data-margin-bottom="10px" data-margin-left="5%" data-margin-right="0px">
+			<a class="fusion-logo-link"  href="https://arkieva.com/" >
+
+						<!-- standard logo -->
+			<img src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Arkieva-modified-logo2018.png" srcset="https://blog.arkieva.com/wp-content/uploads/2018/06/Arkieva-modified-logo2018.png 1x" width="252" height="115" alt="Supply Chain Link Blog &#8211; Arkieva Logo" data-retina_logo_url="" class="fusion-standard-logo" />
+
+			
+					</a>
+		</div>		<nav class="fusion-main-menu" aria-label="Main Menu"><ul id="menu-main-menu" class="fusion-menu"><li  id="menu-item-4042"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4042"  data-item-id="4042"><a  href="https://blog.arkieva.com/" class="fusion-bar-highlight"><span class="menu-text">BLOG HOME</span></a></li><li  id="menu-item-2702"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2702 fusion-megamenu-menu"  data-item-id="2702"><a  href="http://www.arkieva.com/products-we-sell/" class="fusion-bar-highlight"><span class="menu-text">SOLUTIONS</span></a><div class="fusion-megamenu-wrapper fusion-columns-5 columns-per-row-5 columns-5 col-span-12 fusion-megamenu-fullwidth" data-maxwidth="1240"><div class="row"><div class="fusion-megamenu-holder" style="width:1240px;" data-width="1240"><ul role="menu" class="fusion-megamenu "><li  id="menu-item-2708"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2708 fusion-megamenu-submenu fusion-megamenu-columns-5 col-lg-2 col-md-2 col-sm-2" ><div class='fusion-megamenu-title'><a href="http://www.arkieva.com/products-we-sell/demand-planning/">Demand Planning</a></div><ul role="menu" class="sub-menu"><li  id="menu-item-2711"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2711" ><a  href="http://www.arkieva.com/products-we-sell/demand-planning/causal-forecasting/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Causal Forecasting</span></a></li><li  id="menu-item-2712"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2712" ><a  href="http://www.arkieva.com/products-we-sell/demand-planning/collaborative-forecasting/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Collaborative Forecasting</span></a></li><li  id="menu-item-4135"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4135" ><a  href="https://arkieva.com/software/customer-sentiment-analysis-2/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Customer Sentiment Analysis</span></a></li><li  id="menu-item-2709"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2709" ><a  href="https://arkieva.com/software/demand-planning/segmentation/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Demand Analysis</span></a></li><li  id="menu-item-2713"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2713" ><a  href="http://www.arkieva.com/products-we-sell/demand-planning/life-cycle-management/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Life Cycle Management</span></a></li><li  id="menu-item-2714"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2714" ><a  href="http://www.arkieva.com/products-we-sell/demand-planning/performance-management/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Performance Management</span></a></li><li  id="menu-item-2710"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2710" ><a  href="http://www.arkieva.com/products-we-sell/demand-planning/statistical-forecasting/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Statistical Forecasting</span></a></li></ul></li><li  id="menu-item-2718"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2718 fusion-megamenu-submenu fusion-megamenu-columns-5 col-lg-2 col-md-2 col-sm-2" ><div class='fusion-megamenu-title'><a href="http://www.arkieva.com/products-we-sell/supply-planning/">Supply Planning</a></div><ul role="menu" class="sub-menu"><li  id="menu-item-2719"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2719" ><a  href="http://www.arkieva.com/products-we-sell/supply-planning/rough-cut-capacity-planning-rccp/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Rough Cut Capacity Planning (RCCP)</span></a></li><li  id="menu-item-2720"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2720" ><a  href="http://www.arkieva.com/products-we-sell/supply-planning/replenishment-planner/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Replenishment Planner</span></a></li><li  id="menu-item-2721"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2721" ><a  href="http://www.arkieva.com/products-we-sell/supply-planning/supply-planner/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Supply Planner</span></a></li><li  id="menu-item-2727"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2727" ><a  href="http://www.arkieva.com/products-we-sell/scheduling/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Scheduling</span></a></li><li  id="menu-item-2728"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2728" ><a  href="http://www.arkieva.com/products-we-sell/atp-engine/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Order Promising Engine</span></a></li></ul></li><li  id="menu-item-2722"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2722 fusion-megamenu-submenu fusion-megamenu-columns-5 col-lg-2 col-md-2 col-sm-2" ><div class='fusion-megamenu-title'><a href="http://www.arkieva.com/products-we-sell/s_and_op/">S&#038;OP Central</a></div><ul role="menu" class="sub-menu"><li  id="menu-item-2723"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2723" ><a  href="http://www.arkieva.com/products-we-sell/s_and_op/enabling-collaborative-planning/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Collaborative Planning</span></a></li><li  id="menu-item-2726"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2726" ><a  href="http://www.arkieva.com/products-we-sell/sales-central/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Sales Central</span></a></li><li  id="menu-item-2725"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2725" ><a  href="http://www.arkieva.com/products-we-sell/sales-predictor/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Sales Predictor</span></a></li><li  id="menu-item-2724"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2724" ><a  href="http://www.arkieva.com/products-we-sell/s_and_op/what-if-scenario-analysis/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>What-If Scenario Analysis</span></a></li></ul></li><li  id="menu-item-2715"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2715 fusion-megamenu-submenu fusion-megamenu-columns-5 col-lg-2 col-md-2 col-sm-2" ><div class='fusion-megamenu-title'><a href="http://www.arkieva.com/products-we-sell/inventory-planning/">Inventory Planning</a></div><ul role="menu" class="sub-menu"><li  id="menu-item-2716"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2716" ><a  href="http://www.arkieva.com/products-we-sell/inventory-planning/inventory-analyzer/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Inventory Analyzer</span></a></li><li  id="menu-item-2717"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2717" ><a  href="http://www.arkieva.com/products-we-sell/inventory-planning/multi-echelon-inventory-optimizer/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Multi-Echelon Inventory Optimizer</span></a></li></ul></li><li  id="menu-item-2729"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2729 fusion-megamenu-submenu fusion-megamenu-columns-5 col-lg-2 col-md-2 col-sm-2" ><div class='fusion-megamenu-title'><a href="http://www.arkieva.com/people-we-serve/">Platform &#038; Services</a></div><ul role="menu" class="sub-menu"><li  id="menu-item-4168"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4168" ><a  href="https://arkieva.com/software/arkieva-orbit/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Arkieva Orbit</span></a></li><li  id="menu-item-4136"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4136" ><a  href="https://arkieva.com/about/rapid-iterative-implementation/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Implementation Method</span></a></li><li  id="menu-item-2730"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2730" ><a  href="http://www.arkieva.com/products-we-sell/cloud-services/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Cloud</span></a></li><li  id="menu-item-2731"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2731" ><a  href="http://www.arkieva.com/products-we-sell/integration/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Integration</span></a></li><li  id="menu-item-2705"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2705" ><a  href="http://www.arkieva.com/people-we-serve/planners/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Planners</span></a></li><li  id="menu-item-2704"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2704" ><a  href="http://www.arkieva.com/people-we-serve/executives/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Executives</span></a></li><li  id="menu-item-2706"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2706" ><a  href="http://www.arkieva.com/people-we-serve/it-managers/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>IT Managers</span></a></li><li  id="menu-item-2732"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2732" ><a  href="http://www.arkieva.com/people-we-serve/industries/" class="fusion-bar-highlight"><span><span class="fusion-megamenu-bullet"></span>Industries</span></a></li></ul></li></ul></div><div style="clear:both;"></div></div></div></li><li  id="menu-item-2734"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2734 fusion-dropdown-menu"  data-item-id="2734"><a  href="http://www.arkieva.com/company-overview/" class="fusion-bar-highlight"><span class="menu-text">ABOUT</span></a><ul role="menu" class="sub-menu"><li  id="menu-item-2735"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2735 fusion-dropdown-submenu" ><a  href="https://arkieva.com/about/our-story/" class="fusion-bar-highlight"><span>Our Story</span></a></li><li  id="menu-item-4133"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4133 fusion-dropdown-submenu" ><a  href="https://arkieva.com/about/why-arkieva/" class="fusion-bar-highlight"><span>Why Arkieva</span></a></li><li  id="menu-item-4134"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4134 fusion-dropdown-submenu" ><a  href="https://arkieva.com/about/rapid-iterative-implementation/" class="fusion-bar-highlight"><span>Implementation Method</span></a></li><li  id="menu-item-2736"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2736 fusion-dropdown-submenu" ><a  href="https://arkieva.com/about/management-team/" class="fusion-bar-highlight"><span>Management Team</span></a></li><li  id="menu-item-2737"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2737 fusion-dropdown-submenu" ><a  href="https://arkieva.com/about/partnerships/" class="fusion-bar-highlight"><span>Partnerships</span></a></li><li  id="menu-item-2738"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2738 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/news/" class="fusion-bar-highlight"><span>News and Events</span></a></li><li  id="menu-item-2739"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2739 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/company-overview/careers/" class="fusion-bar-highlight"><span>Careers</span></a></li></ul></li><li  id="menu-item-2745"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2745 fusion-dropdown-menu"  data-item-id="2745"><a  href="http://www.arkieva.com/learn-more/" class="fusion-bar-highlight"><span class="menu-text">RESOURCES</span></a><ul role="menu" class="sub-menu"><li  id="menu-item-2751"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2751 fusion-dropdown-submenu" ><a  href="https://blog.arkieva.com/" class="fusion-bar-highlight"><span>Blog</span></a></li><li  id="menu-item-2744"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2744 fusion-dropdown-submenu" ><a  href="https://arkieva.com/webinars/" class="fusion-bar-highlight"><span>Webinars</span></a></li><li  id="menu-item-2747"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2747 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/learn-more/client-cases//" class="fusion-bar-highlight"><span>Case Studies</span></a></li><li  id="menu-item-2749"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2749 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/learn-more/whitepapers/" class="fusion-bar-highlight"><span>Whitepapers</span></a></li><li  id="menu-item-2748"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2748 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/learn-more/product-sheets/" class="fusion-bar-highlight"><span>Product Sheets</span></a></li><li  id="menu-item-2750"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2750 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/learn-more/books/" class="fusion-bar-highlight"><span>Books</span></a></li><li  id="menu-item-2746"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2746 fusion-dropdown-submenu" ><a  href="http://www.arkieva.com/learn-more/infographics/" class="fusion-bar-highlight"><span>Infographics</span></a></li></ul></li><li  id="menu-item-2752"  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2752 fusion-menu-item-button"  data-item-id="2752"><a  href="https://arkieva.com/demo/supply-chain-planning-software/" class="fusion-bar-highlight"><span class="menu-text fusion-button button-default button-medium">FREE DEMO</span></a></li></ul></nav>	<div class="fusion-mobile-menu-icons">
+							<a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu" aria-expanded="false"></a>
+		
+		
+		
+			</div>
+	
+<nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" aria-label="Main Menu Mobile"></nav>
+
+					</div>
+</div>
+				</div>
+				<div class="fusion-clearfix"></div>
+			</header>
+					
+		
+		<div id="sliders-container">
+					</div>
+				
+		
+									
+				<main id="main" class="clearfix " style="">
+			<div class="fusion-row" style="">
+
+<section id="content" style="float: left;">
+		
+					<article id="post-3609" class="post post-3609 type-post status-publish format-standard has-post-thumbnail hentry category-demand-planning category-forecasting tag-sales-forecast-methods tag-sales-forecasting-examples tag-sales-forecasting-models tag-sales-predictor-ratio tag-sales-projection-example">
+																		<h1 class="entry-title fusion-post-title">How Does My Open Order History Impact My Sales Prediction?</h1>							
+																								
+						<div class="post-content">
+				<p><img class="aligncenter size-full wp-image-3616" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner.png" alt="sales-prediction" width="1000" height="200" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-200x40.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-300x60.png 300w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-400x80.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-600x120.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-610x122.png 610w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-768x154.png 768w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner-800x160.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-banner.png 1000w" sizes="(max-width: 1000px) 100vw, 1000px" /></p>
+<p>Open order history plays an important role in <a href="https://arkieva.com/software/demand-planning/" target="_blank" rel="noopener noreferrer">demand planning</a>, especially for business-to-business companies.</p>
+<h3>What is an Open Order?</h3>
+<p>An open order is defined as an order placed by the customer which is under process and is yet to be fulfilled by the supplier. For effective analysis, open order data needs to be recorded daily in an ERP system. A minimum of twelve to eighteen months of open order history is required for your sales forecasting analysis and fine-tuning process. A shorter period could render unreliable and skew the results of your data analysis.</p>
+<div class="fusion-fullwidth fullwidth-box hundred-percent-fullwidth non-hundred-percent-height-scrolling"  style='background-color: rgba(255,255,255,0);background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'><div class="fusion-builder-row fusion-row "><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1 fusion-builder-column-1 fusion-one-full fusion-column-first fusion-column-last fusion-column-no-min-height 1_1"  style='margin-top:0px;margin-bottom:0px;'>
+					<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"   data-bg-url="">
+						[Read More:&nbsp;<a href="https://blog.arkieva.com/markov-chain-sales-prediction/" target="_blank" rel="noopener noreferrer">How to Predict Sales Using Markov Chain</a>]
+&nbsp;</p>
+<h2>Challenges of Sales Prediction with Limited Open Order History</h2>
+<p>Results from analysis of available data have an inherent error of a probable value and an expected range. Below are some of the challenges while dealing with limited open order data for analytical purposes.</p>
+<ol>
+<li><strong> Unreliable: </strong>The results from the available limited data represents the current conditions and assumptions and cannot be extrapolated to a different set of conditions.</li>
+<li><strong> Skewed: </strong>Based on the timing or the range of data collection, the results can be heavily tilted towards the existing parameters and cannot be applied to different parameters.</li>
+<li><strong> Fluctuating: </strong>The results from the one set of limited data can vary greatly from the results of another set of limited data on the same conditions but with different time periods.</li>
+<li><strong> Wide ranged: </strong>The difference in the upper and lower range of limited data will vary hugely with a different set of parameters.</li>
+<li><strong> Moving averages: </strong>The mean value of the limited data points will keep shifting without any reliable movement prediction.</li>
+</ol>
+<h3>Case study: How forecast accuracy increases with increased data points</h3>
+<p>The example below demonstrates how forecast accuracy increases with increasing data points. Similarly, the effectiveness and reliability of open order data increase with the increase in the volume and range of the open order data.</p>
+<p><strong>Week 1</strong></p>
+<p>The example shows a case of how forecast accuracy increases during the month. In this case, by week 2, there are enough indications to increase the supply of the product being measured.</p>
+<p><img class="aligncenter wp-image-3610 size-large" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-1024x530.png" alt="sales-prediction" width="1024" height="530" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-200x104.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-300x155.png 300w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-400x207.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-600x311.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-610x316.png 610w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-768x397.png 768w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-800x414.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-1024x530.png 1024w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1-1200x621.png 1200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image1.png 1654w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Figure 1: Notice the wide range at the beginning of the month</p>
+[Read More:&nbsp;<a href="https://blog.arkieva.com/demand-forecasting-art-science/" target="_blank" rel="noopener noreferrer">The Art and Science That Keeps You Guessing</a>]
+&nbsp;</p>
+<p><strong>Week 2-3</strong></p>
+<p>As the data increases in week two, you can see that there is a better chance of <a href="https://blog.arkieva.com/markov-chain-sales-prediction/" target="_blank" rel="noopener noreferrer">predicting sales</a> as shown in Figure 2 below.</p>
+<p><img class="aligncenter wp-image-3611 size-large" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-1024x564.png" alt="sales-prediction" width="1024" height="564" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-200x110.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-300x165.png 300w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-400x220.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-600x331.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-610x336.png 610w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-768x423.png 768w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-800x441.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2-1024x564.png 1024w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image2.png 1056w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Figure 2: More data means better prediction</p>
+<p><strong>Week 4</strong></p>
+<p>By week four, as shown in the graph below, there is no doubt that the current demand supersedes the projected demand.</p>
+<p><img class="aligncenter wp-image-3612 size-large" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-1024x563.png" alt="sales-prediction" width="1024" height="563" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-200x110.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-300x165.png 300w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-400x220.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-600x330.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-610x336.png 610w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-768x423.png 768w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-800x440.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3-1024x563.png 1024w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image3.png 1045w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Figure 3</p>
+<p>From the above case study, it is clear that there is a wide range and more fluctuations of data points at the start of the month. As the month progresses, the range narrows and the data points begin to consolidate into an identifiable pattern. By the end of the second week, the sales projection becomes clear and justifies action to increase the supply to meet the demand which will be higher than the original sales forecast.</p>
+[Read More:&nbsp;<a href="https://blog.arkieva.com/secret-sauce-improving-demand-planning/" target="_blank" rel="noopener noreferrer">The ‘Secret Sauce’ to Improving Demand Planning</a>]
+<p>&nbsp;</p>
+<h2>Calculating Your Sales Predictions</h2>
+<p>Similarly, the volume of data for open order history has a direct impact on forecasting analysis and adjustments. Larger volumes and a wide range of open order history across twelve to eighteen months help determine a reliable predictor ratio (refer to Figure 5 below).</p>
+<h3>What is the Predictor Ratio?</h3>
+<p>The Predictor ratio is the ratio of the actual total shipments of M1 (next month) and the open orders of M1 as of a particular date in M0 (current month).</p>
+<p><img class="wp-image-3614 size-medium alignnone" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-275x300.png" alt="sales-prediction" width="275" height="300" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-200x218.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-275x300.png 275w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-400x436.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-600x654.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4-610x665.png 610w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/sales-prediction-image4.png 630w" sizes="(max-width: 275px) 100vw, 275px" /></p>
+<p>Figure 4: Sample Predictor Ratios</p>
+<p>A reliable predictor ratio applicable for the current period under consideration is derived from a historically similar period/season of the business. This predictor ratio provides the average value and the range to be considered. Use this average value and range to plot projected sales vs. current forecast. Timely proactive action based on the <a href="https://arkieva.com/software/sales-predictor/" target="_blank" rel="noopener noreferrer">sales projections</a> can help improve inventory planning, save on <a href="https://arkieva.com/software/inventory-planning/" target="_blank" rel="noopener noreferrer">inventory costs</a>, increase customer satisfaction, maximize asset utilization and support new sales opportunities.</p>
+<p>Historical data from open orders are generated from large volumes of structured and unstructured big data. This data in most cases, so large that it’s impossible to process and analyze the data with traditional tools and techniques. Hence, leading to need for a more robust <a href="https://arkieva.com/software/demand-planning/" target="_blank" rel="noopener noreferrer">demand planning solution</a>. Aligning your sales forecast with current data trends is an essential part of improving your demand planning process.</p>
+<p><em>Enjoyed this post?&nbsp;</em><a href="https://blog.arkieva.com/subscribe/" target="_blank" rel="noopener noreferrer">Subscribe</a><em>&nbsp;or follow Arkieva on&nbsp;<a href="https://www.linkedin.com/company/arkieva" target="_blank" rel="noopener noreferrer">Linkedin</a>,&nbsp;</em><a href="https://twitter.com/Arkieva" target="_blank" rel="noopener noreferrer">Twitter</a><em>, and&nbsp;</em><a href="https://www.facebook.com/arkieva/" target="_blank" rel="noopener noreferrer">Facebook</a><em>&nbsp;for blog updates</em>.<div class="fusion-clearfix"></div>
+
+					</div>
+				</div></div></div>
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Blog Subscription - Bottom of Posts --><div id="om-o2huu0neaudi0smz6v7v-holder"></div><script>var o2huu0neaudi0smz6v7v,o2huu0neaudi0smz6v7v_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){o2huu0neaudi0smz6v7v_poll(function(){if(window['om_loaded']){if(!o2huu0neaudi0smz6v7v){o2huu0neaudi0smz6v7v=new OptinMonsterApp();return o2huu0neaudi0smz6v7v.init({"u":"29935.767257","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.optmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;o2huu0neaudi0smz6v7v=new OptinMonsterApp();o2huu0neaudi0smz6v7v.init({"u":"29935.767257","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster --><span class="et_social_bottom_trigger"></span>							</div>
+
+												<div class="fusion-meta-info"><div class="fusion-meta-info-wrapper">By <span class="vcard"><span class="fn"><a href="https://blog.arkieva.com/author/hyeboah/" title="Posts by Hellen Oti-Yeboah" rel="author">Hellen Oti-Yeboah</a></span></span><span class="fusion-inline-sep">|</span><span class="updated rich-snippet-hidden">2019-04-13T23:09:09-04:00</span><span>March 2nd, 2018</span><span class="fusion-inline-sep">|</span><a href="https://blog.arkieva.com/category/demand-planning/" rel="category tag">Demand Planning</a>, <a href="https://blog.arkieva.com/category/demand-planning/forecasting/" rel="category tag">Forecasting</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="https://blog.arkieva.com/sales-prediction/#respond"><span class="dsq-postid" data-dsqidentifier="3609 https://blog.arkieva.com/?p=3609">0 Comments</span></a></span></div></div>													<div class="fusion-sharing-box fusion-single-sharing-box share-box">
+		<h4>Share This Article.</h4>
+		<div class="fusion-social-networks boxed-icons"><div class="fusion-social-networks-wrapper"><a  class="fusion-social-network-icon fusion-tooltip fusion-facebook fusion-icon-facebook" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&amp;t=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" target="_blank" rel="nofollow" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="Facebook"><span class="screen-reader-text">Facebook</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-twitter fusion-icon-twitter" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://twitter.com/share?text=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&amp;url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F" target="_blank" rel="nofollow" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="Twitter"><span class="screen-reader-text">Twitter</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-linkedin fusion-icon-linkedin" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://blog.arkieva.com/sales-prediction/&amp;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&amp;summary=Open%20order%20history%20plays%20an%20important%20role%20in%20demand%20planning%2C%20especially%20for%20business-to-business%20companies.%0D%0AWhat%20is%20an%20Open%20Order%3F%0D%0AAn%20open%20order%20is%20defined%20as%20an%20order%20placed%20by%20the%20customer%20which%20is%20under%20process%20and%20is%20yet%20to%20be%20fulfilled%20by%20the%20supp" target="_blank" rel="nofollow" data-placement="top" data-title="LinkedIn" data-toggle="tooltip" title="LinkedIn"><span class="screen-reader-text">LinkedIn</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-reddit fusion-icon-reddit" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://reddit.com/submit?url=https://blog.arkieva.com/sales-prediction/&amp;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" target="_blank" rel="nofollow" data-placement="top" data-title="Reddit" data-toggle="tooltip" title="Reddit"><span class="screen-reader-text">Reddit</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-googleplus fusion-icon-googleplus" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://plus.google.com/share?url=https://blog.arkieva.com/sales-prediction/" onclick="javascript:window.open(this.href,&#039;&#039;, &#039;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#039;);return false;" target="_blank" rel="nofollow" data-placement="top" data-title="Google+" data-toggle="tooltip" title="Google+"><span class="screen-reader-text">Google+</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-tumblr fusion-icon-tumblr" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://www.tumblr.com/share/link?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&amp;name=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&amp;description=Open%20order%20history%20plays%20an%20important%20role%20in%20demand%20planning%2C%20especially%20for%20business-to-business%20companies.%0D%0AWhat%20is%20an%20Open%20Order%3F%0D%0AAn%20open%20order%20is%20defined%20as%20an%20order%20placed%20by%20the%20customer%20which%20is%20under%20process%20and%20is%20yet%20to%20be%20fulfilled%20by%20the%20supplier.%20For%20effective" target="_blank" rel="nofollow" data-placement="top" data-title="Tumblr" data-toggle="tooltip" title="Tumblr"><span class="screen-reader-text">Tumblr</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-pinterest fusion-icon-pinterest" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&amp;description=Open%20order%20history%20plays%20an%20important%20role%20in%20demand%20planning%2C%20especially%20for%20business-to-business%20companies.%0D%0AWhat%20is%20an%20Open%20Order%3F%0D%0AAn%20open%20order%20is%20defined%20as%20an%20order%20placed%20by%20the%20customer%20which%20is%20under%20process%20and%20is%20yet%20to%20be%20fulfilled%20by%20the%20supplier.%20For%20effective&amp;media=https%3A%2F%2Fblog.arkieva.com%2Fwp-content%2Fuploads%2F2018%2F03%2Fsales-prediction-social-media.png" target="_blank" rel="nofollow" data-placement="top" data-title="Pinterest" data-toggle="tooltip" title="Pinterest"><span class="screen-reader-text">Pinterest</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-vk fusion-icon-vk" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://vkontakte.ru/share.php?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&amp;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&amp;description=Open%20order%20history%20plays%20an%20important%20role%20in%20demand%20planning%2C%20especially%20for%20business-to-business%20companies.%0D%0AWhat%20is%20an%20Open%20Order%3F%0D%0AAn%20open%20order%20is%20defined%20as%20an%20order%20placed%20by%20the%20customer%20which%20is%20under%20process%20and%20is%20yet%20to%20be%20fulfilled%20by%20the%20supplier.%20For%20effective" target="_blank" rel="nofollow" data-placement="top" data-title="Vk" data-toggle="tooltip" title="Vk"><span class="screen-reader-text">Vk</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-mail fusion-icon-mail fusion-last-social-icon" style="color:#cb003d;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="mailto:?subject=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&amp;body=https://blog.arkieva.com/sales-prediction/" target="_self" rel="nofollow" data-placement="top" data-title="Email" data-toggle="tooltip" title="Email"><span class="screen-reader-text">Email</span></a><div class="fusion-clearfix"></div></div></div>	</div>
+														<section class="about-author">
+																						<div class="fusion-title fusion-title-size-two sep-single sep-solid" style="margin-top:0%;margin-bottom:30px;">
+					<h2 class="title-heading-left" style="margin:0;">
+						About the Author: 						<a href="https://blog.arkieva.com/author/hyeboah/" title="Posts by Hellen Oti-Yeboah" rel="author">Hellen Oti-Yeboah</a>																	</h2>
+					<div class="title-sep-container">
+						<div class="title-sep sep-single sep-solid"></div>
+					</div>
+				</div>
+										<div class="about-author-container">
+							<div class="avatar">
+								<img src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/hellen-headshot-150x150.jpg" width="72" height="72" alt="Hellen Oti-Yeboah" class="avatar avatar-72 wp-user-avatar wp-user-avatar-72 alignnone photo" />							</div>
+							<div class="description">
+								Hellen is the Marketing Manager at Arkieva, managing all aspects of Arkieva’s marketing initiatives. A passionate technology enthusiast, Hellen is always looking for new ways to use technology to improve results and connect with prospective and existing clients. When she's not strategizing or implementing cool marketing ideas at Arkieva, Hellen enjoys experimental cooking with her 'newly created Masterchef recipes.'							</div>
+						</div>
+					</section>
+								<section class="related-posts single-related-posts">
+					<div class="fusion-title fusion-title-size-two sep-single sep-solid" style="margin-top:0%;margin-bottom:30px;">
+					<h2 class="title-heading-left" style="margin:0;">
+						Related Posts					</h2>
+					<div class="title-sep-container">
+						<div class="title-sep sep-single sep-solid"></div>
+					</div>
+				</div>
+				
+	
+	
+	
+	
+				<div class="fusion-carousel fusion-carousel-title-below-image" data-imagesize="auto" data-metacontent="yes" data-autoplay="yes" data-touchscroll="no" data-columns="3" data-itemmargin="40px" data-itemwidth="180" data-touchscroll="yes" data-scrollitems="1">
+		<div class="fusion-carousel-positioner">
+			<ul class="fusion-carousel-holder">
+																							<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/dashboard-you-deserve/">
+			
+					<img width="1024" height="575" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard-200x112.png" class="attachment-full size-full wp-post-image" alt="" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/dashboard.png 1024w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/dashboard-you-deserve/" target="_self" title="In Search of the Dashboard You Deserve">In Search of the Dashboard You Deserve</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">December 18th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/dashboard-you-deserve/#respond"><span class="dsq-postid" data-dsqidentifier="4251 http://blog.arkieva.com/?p=4251">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+																			<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/shutdown-days-demand-patterns/">
+			
+					<img width="1024" height="575" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns-200x112.png" class="attachment-full size-full wp-post-image" alt="shutdown days demand planning" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutdown-days-demand-patterns.png 1024w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/shutdown-days-demand-patterns/" target="_self" title="Shutdown Days &#038; Demand Patterns">Shutdown Days &#038; Demand Patterns</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">November 20th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/shutdown-days-demand-patterns/#respond"><span class="dsq-postid" data-dsqidentifier="4226 http://blog.arkieva.com/?p=4226">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+																			<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/managing-intermittent-demand/">
+			
+					<img width="1024" height="575" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand-200x112.png" class="attachment-full size-full wp-post-image" alt="managing intermittent demand" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/managing-intermittent-demand.png 1024w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/managing-intermittent-demand/" target="_self" title="Lots of Zeroes? Basic Guidelines to Managing Intermittent Demand – Part 2">Lots of Zeroes? Basic Guidelines to Managing Intermittent Demand – Part 2</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">November 13th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/managing-intermittent-demand/#respond"><span class="dsq-postid" data-dsqidentifier="4218 http://blog.arkieva.com/?p=4218">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+																			<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/probabilistic-forecasting-confidence-intervals/">
+			
+					<img width="1024" height="575" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social-200x112.png" class="attachment-full size-full wp-post-image" alt="" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/probabilistic-forecasting-social.png 1024w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/probabilistic-forecasting-confidence-intervals/" target="_self" title="Probabilistic Forecasting and Confidence Intervals">Probabilistic Forecasting and Confidence Intervals</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">September 27th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/probabilistic-forecasting-confidence-intervals/#respond"><span class="dsq-postid" data-dsqidentifier="4171 http://blog.arkieva.com/?p=4171">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+																			<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/hurricane-forecasting-lessons/">
+			
+					<img width="4267" height="2397" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-200x112.png" class="attachment-full size-full wp-post-image" alt="" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01-1200x674.png 1200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/hurricane-lessons-01.png 4267w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/hurricane-forecasting-lessons/" target="_self" title="Business Forecasting Lessons From Hurricanes">Business Forecasting Lessons From Hurricanes</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">September 11th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/hurricane-forecasting-lessons/#respond"><span class="dsq-postid" data-dsqidentifier="4157 http://blog.arkieva.com/?p=4157">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+																			<li class="fusion-carousel-item">
+						<div class="fusion-carousel-item-wrapper">
+							
+
+<div  class="fusion-image-wrapper" aria-haspopup="true">
+	
+	
+		<a href="https://blog.arkieva.com/benefits-system-driven-inventory-projections/">
+			
+					<img width="1024" height="575" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting-200x112.png" class="attachment-full size-full wp-post-image" alt="benefits system driven inventory forecasting" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting-200x112.png 200w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting-400x225.png 400w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting-600x337.png 600w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting-800x449.png 800w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/benefits-system-driven-inventory-forecasting.png 1024w" sizes="(min-width: 2200px) 100vw, (min-width: 824px) 292px, (min-width: 732px) 438px, (min-width: 640px) 732px, " />
+	
+
+		</a>
+
+	
+</div>
+																							<h4 class="fusion-carousel-title">
+									<a class="fusion-related-posts-title-link" href="https://blog.arkieva.com/benefits-system-driven-inventory-projections/" target="_self" title="Top 7 Benefits of System driven Inventory Projections">Top 7 Benefits of System driven Inventory Projections</a>
+								</h4>
+
+								<div class="fusion-carousel-meta">
+									<span class="fusion-date">September 5th, 2019</span>
+
+																			<span class="fusion-inline-sep">|</span>
+										<span><a href="https://blog.arkieva.com/benefits-system-driven-inventory-projections/#respond"><span class="dsq-postid" data-dsqidentifier="4153 http://blog.arkieva.com/?p=4153">0 Comments</span></a></span>
+																	</div><!-- fusion-carousel-meta -->
+													</div><!-- fusion-carousel-item-wrapper -->
+					</li>
+							</ul><!-- fusion-carousel-holder -->
+										<div class="fusion-carousel-nav">
+					<span class="fusion-nav-prev"></span>
+					<span class="fusion-nav-next"></span>
+				</div>
+			
+		</div><!-- fusion-carousel-positioner -->
+	</div><!-- fusion-carousel -->
+</section><!-- related-posts -->
+
+
+																		
+<div id="disqus_thread"></div>
+													</article>
+		</section>
+<aside id="sidebar" role="complementary" class="sidebar fusion-widget-area fusion-content-widget-area fusion-sidebar-right fusion-blogsidebar" style="float: right;" >
+											
+					<section id="search-2" class="widget widget_search"><form role="search" class="searchform fusion-search-form fusion-live-search" method="get" action="https://blog.arkieva.com/">
+	<div class="fusion-search-form-content">
+		<div class="fusion-search-field search-field">
+			<label><span class="screen-reader-text">Search for:</span>
+									<input type="text" value="" name="s" class="s" placeholder="Search ..." required aria-required="true" aria-label="Search ..."/>
+							</label>
+		</div>
+		<div class="fusion-search-button search-button">
+			<input type="submit" class="fusion-search-submit searchsubmit" value="&#xf002;" />
+					</div>
+	</div>
+	</form>
+</section><section id="optin-monster-api-2" class="widget optin-monster-api"><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Arkieva Blog Subscription - sidebar --><div id="om-c7ycztz3nt6lsiphdxzp-holder"></div><script>var c7ycztz3nt6lsiphdxzp,c7ycztz3nt6lsiphdxzp_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){c7ycztz3nt6lsiphdxzp_poll(function(){if(window['om_loaded']){if(!c7ycztz3nt6lsiphdxzp){c7ycztz3nt6lsiphdxzp=new OptinMonsterApp();return c7ycztz3nt6lsiphdxzp.init({"u":"29935.764469","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.optmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;c7ycztz3nt6lsiphdxzp=new OptinMonsterApp();c7ycztz3nt6lsiphdxzp.init({"u":"29935.764469","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster --></section><section id="text-14" class="widget widget_text">			<div class="textwidget"><strong>CONNECT WITH ARKIEVA</strong>
+<div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep sep-single sep-solid" style="border-color:#CB003D;border-top-width:2px;margin-left: auto;margin-right: auto;margin-top:;width:100%;max-width:100%;"></div>
+
+</div>
+		</section><section id="text-15" class="widget widget_text">			<div class="textwidget"><div class="et_social_networks et_social_autowidth et_social_slide et_social_circle et_social_top et_social_mobile_on et_social_outer_dark">
+					
+					
+					<ul class="et_social_icons_container"><li class="et_social_linkedin">
+						<a href="https://www.linkedin.com/company/arkieva" class="et_social_follow" target="_blank" rel="noopener noreferrer">
+							<i class="et_social_icon et_social_icon_linkedin"></i>
+							
+							<span class="et_social_overlay"></span>
+						</a>
+					</li><li class="et_social_twitter">
+						<a href="https://twitter.com/Arkieva" class="et_social_follow" target="_blank" rel="noopener noreferrer">
+							<i class="et_social_icon et_social_icon_twitter"></i>
+							
+							<span class="et_social_overlay"></span>
+						</a>
+					</li><li class="et_social_facebook">
+						<a href="https://www.facebook.com/arkieva/" class="et_social_follow" target="_blank" rel="noopener noreferrer">
+							<i class="et_social_icon et_social_icon_facebook"></i>
+							
+							<span class="et_social_overlay"></span>
+						</a>
+					</li><li class="et_social_youtube">
+						<a href="https://www.youtube.com/user/arkieva" class="et_social_follow" target="_blank" rel="noopener noreferrer">
+							<i class="et_social_icon et_social_icon_youtube"></i>
+							
+							<span class="et_social_overlay"></span>
+						</a>
+					</li><li class="et_social_rss">
+						<a href="https://blog.arkieva.com/feed/" class="et_social_follow" target="_blank" rel="noopener noreferrer">
+							<i class="et_social_icon et_social_icon_rss"></i>
+							
+							<span class="et_social_overlay"></span>
+						</a>
+					</li></ul>
+				</div></div>
+		</section><section id="text-17" class="widget widget_text">			<div class="textwidget"><div style="margin-bottom: 20px;"><strong>FEATURED RESOURCES </strong>
+<div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep sep-single sep-solid" style="border-color:#CB003D;border-top-width:2px;margin-left: auto;margin-right: auto;margin-top:;width:100%;max-width:100%;"></div>
+</div></div>
+		</section><section id="text-16" class="widget widget_text">			<div class="textwidget"><a href="https://arkieva.com/learn/supply-chain-digital-transformation/"><img class="alignnone size-full wp-image-2696" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/escalade-whitepaper-social-title-01.png" alt="key-supply-chain-digital-transformation-pitfalls-to-avoid" width="385" height="240" /></a></div>
+		</section><section id="text-20" class="widget widget_text">			<div class="textwidget"><a href="https://arkieva.com/gartner-magic-quadrant-sop-sod/"><img class="alignnone size-full wp-image-2698" src="https://arkieva.com/wp-content/uploads/2019/06/Gartner-supply-chain-magic-quadrant-sales-and-operations-planning-system-of-differentiation.jpg" alt="Arkieva-named-leader-in-MQ" width="385" height="240" /></a></div>
+		</section><section id="text-21" class="widget widget_text">			<div class="textwidget"><div class="fusion-button-wrapper"><style type="text/css" scoped="scoped">.fusion-button.button-1 .fusion-button-text, .fusion-button.button-1 i {color:#ffffff;}.fusion-button.button-1 {border-width:0px;border-color:#ffffff;}.fusion-button.button-1 .fusion-button-icon-divider{border-color:#ffffff;}.fusion-button.button-1:hover .fusion-button-text, .fusion-button.button-1:hover i,.fusion-button.button-1:focus .fusion-button-text, .fusion-button.button-1:focus i,.fusion-button.button-1:active .fusion-button-text, .fusion-button.button-1:active{color:#ffffff;}.fusion-button.button-1:hover, .fusion-button.button-1:focus, .fusion-button.button-1:active{border-width:0px;border-color:#ffffff;}.fusion-button.button-1:hover .fusion-button-icon-divider, .fusion-button.button-1:hover .fusion-button-icon-divider, .fusion-button.button-1:active .fusion-button-icon-divider{border-color:#ffffff;}.fusion-button.button-1{background: #00a3cb;}.fusion-button.button-1:hover,.button-1:focus,.fusion-button.button-1:active{background: #000000;}.fusion-button.button-1{width:100%;}</style><a class="fusion-button button-flat fusion-button-pill button-medium button-custom button-1" target="_self" href="http://www.arkieva.com/learn-more/whitepapers/" rel="noopener noreferrer"><span class="fusion-button-text">View All Whitepapers</span></a></div></div>
+		</section><section id="text-12" class="widget widget_text">			<div class="textwidget"><div style="margin-bottom: 37px;"><strong>RECENT POSTS </strong>
+<div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep sep-single sep-solid" style="border-color:#CB003D;border-top-width:2px;margin-left: auto;margin-right: auto;margin-top:;width:100%;max-width:100%;"></div>
+</div>
+
+<div class="fusion-recent-posts fusion-recent-posts-1 avada-container layout-default layout-columns-1"><section class="fusion-columns columns fusion-columns-1 columns-1"><article class="post fusion-column column col col-lg-12 col-md-12 col-sm-12"><div class="fusion-flexslider flexslider flexslider-hover-type-none"><ul class="slides"><li><a href="https://blog.arkieva.com/safety-stock-raw-materials/" class="hover-type-none" aria-label="Safety Stock for Raw Materials &#8211; A view from the trenches and importance of community intelligence"><img width="700" height="441" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/safety-stock-raw-material-social-700x441.png" class="attachment-recent-posts size-recent-posts" alt="safety stock" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/safety-stock-raw-material-social-320x202.png 320w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/safety-stock-raw-material-social-700x441.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></li></ul></div><div class="recent-posts-content"><span class="vcard" style="display: none;"><span class="fn"><a href="https://blog.arkieva.com/author/kfordyce/" title="Posts by Dr. Ken Fordyce" rel="author">Dr. Ken Fordyce</a></span></span><span class="updated" style="display:none;">2020-03-10T09:23:10-04:00</span><h4 class="entry-title"><a href="https://blog.arkieva.com/safety-stock-raw-materials/">Safety Stock for Raw Materials &#8211; A view from the trenches and importance of community intelligence</a></h4></div></article><article class="post fusion-column column col col-lg-12 col-md-12 col-sm-12"><div class="fusion-flexslider flexslider flexslider-hover-type-none"><ul class="slides"><li><a href="https://blog.arkieva.com/what-if-scenario-planning/" class="hover-type-none" aria-label="What-If Scenario Planning &#8211; Part 3"><img width="700" height="441" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/what-if-scenario-planning-social-image-700x441.png" class="attachment-recent-posts size-recent-posts" alt="what-if-scenario-planning" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/what-if-scenario-planning-social-image-320x202.png 320w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/what-if-scenario-planning-social-image-700x441.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></li></ul></div><div class="recent-posts-content"><span class="vcard" style="display: none;"><span class="fn"><a href="https://blog.arkieva.com/author/vijey-kumar/" title="Posts by Vijey Kumar" rel="author">Vijey Kumar</a></span></span><span class="updated" style="display:none;">2020-03-04T13:33:12-05:00</span><h4 class="entry-title"><a href="https://blog.arkieva.com/what-if-scenario-planning/">What-If Scenario Planning &#8211; Part 3</a></h4></div></article><article class="post fusion-column column col col-lg-12 col-md-12 col-sm-12"><div class="fusion-flexslider flexslider flexslider-hover-type-none"><ul class="slides"><li><a href="https://blog.arkieva.com/central-planning-optimization/" class="hover-type-none" aria-label="Optimization and Central Planning: Compass or Advanced Navigation"><img width="700" height="441" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-planning-optimization-social-700x441.png" class="attachment-recent-posts size-recent-posts" alt="" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-planning-optimization-social-320x202.png 320w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-planning-optimization-social-700x441.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></li></ul></div><div class="recent-posts-content"><span class="vcard" style="display: none;"><span class="fn"><a href="https://blog.arkieva.com/author/kfordyce/" title="Posts by Dr. Ken Fordyce" rel="author">Dr. Ken Fordyce</a></span></span><span class="updated" style="display:none;">2020-03-09T17:50:50-04:00</span><h4 class="entry-title"><a href="https://blog.arkieva.com/central-planning-optimization/">Optimization and Central Planning: Compass or Advanced Navigation</a></h4></div></article><article class="post fusion-column column col col-lg-12 col-md-12 col-sm-12"><div class="fusion-flexslider flexslider flexslider-hover-type-none"><ul class="slides"><li><a href="https://blog.arkieva.com/optimized-inventory-forecasting/" class="hover-type-none" aria-label="“Optimized” Inventory Forecasting a Co-Product of Optimized Central Planning"><img width="700" height="441" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/optimized-inventory-forecasting-social-700x441.png" class="attachment-recent-posts size-recent-posts" alt="optimized inventory forecasting" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/optimized-inventory-forecasting-social-320x202.png 320w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/optimized-inventory-forecasting-social-700x441.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></li></ul></div><div class="recent-posts-content"><span class="vcard" style="display: none;"><span class="fn"><a href="https://blog.arkieva.com/author/kfordyce/" title="Posts by Dr. Ken Fordyce" rel="author">Dr. Ken Fordyce</a></span></span><span class="updated" style="display:none;">2020-02-20T09:00:16-05:00</span><h4 class="entry-title"><a href="https://blog.arkieva.com/optimized-inventory-forecasting/">“Optimized” Inventory Forecasting a Co-Product of Optimized Central Planning</a></h4></div></article><article class="post fusion-column column col col-lg-12 col-md-12 col-sm-12"><div class="fusion-flexslider flexslider flexslider-hover-type-none"><ul class="slides"><li><a href="https://blog.arkieva.com/supply-chain-interruption-coronavirus/" class="hover-type-none" aria-label="Coronavirus a Substantial Supply Chain Interruption – The Importance of Digital Supply Chain"><img width="700" height="441" src="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-chain-interruption-coronavirus-700x441.png" class="attachment-recent-posts size-recent-posts" alt="supply-chain-interruption" srcset="https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-chain-interruption-coronavirus-320x202.png 320w, https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/supply-chain-interruption-coronavirus-700x441.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></li></ul></div><div class="recent-posts-content"><span class="vcard" style="display: none;"><span class="fn"><a href="https://blog.arkieva.com/author/kfordyce/" title="Posts by Dr. Ken Fordyce" rel="author">Dr. Ken Fordyce</a></span></span><span class="updated" style="display:none;">2020-02-10T15:35:14-05:00</span><h4 class="entry-title"><a href="https://blog.arkieva.com/supply-chain-interruption-coronavirus/">Coronavirus a Substantial Supply Chain Interruption – The Importance of Digital Supply Chain</a></h4></div></article></section></div></div>
+		</section>			</aside>
+					
+				</div>  <!-- fusion-row -->
+			</main>  <!-- #main -->
+			
+			
+			
+										
+				<div class="fusion-footer">
+						
+	<footer class="fusion-footer-widget-area fusion-widget-area">
+		<div class="fusion-row">
+			<div class="fusion-columns fusion-columns-4 fusion-widget-area">
+				
+																									<div class="fusion-column col-lg-3 col-md-3 col-sm-3">
+													</div>
+																										<div class="fusion-column col-lg-3 col-md-3 col-sm-3">
+													</div>
+																										<div class="fusion-column col-lg-3 col-md-3 col-sm-3">
+													</div>
+																										<div class="fusion-column fusion-column-last col-lg-3 col-md-3 col-sm-3">
+													</div>
+																											
+				<div class="fusion-clearfix"></div>
+			</div> <!-- fusion-columns -->
+		</div> <!-- fusion-row -->
+	</footer> <!-- fusion-footer-widget-area -->
+
+	
+	<footer id="footer" class="fusion-footer-copyright-area">
+		<div class="fusion-row">
+			<div class="fusion-copyright-content">
+
+				<div class="fusion-copyright-notice">
+		<div>
+		+1. 877.722.7627 |  Info@arkieva.com | © Copyright <script>document.write(new Date().getFullYear());</script>  |   All Rights Reserved   |  <a href='http://www.arkieva.com/privacy/' target='_blank'>Privacy </a> | <a href='http://www.arkieva.com/sitemap/' target='_blank'>Sitemap  </a>	</div>
+</div>
+<div class="fusion-social-links-footer">
+	<div class="fusion-social-networks boxed-icons"><div class="fusion-social-networks-wrapper"><a  class="fusion-social-network-icon fusion-tooltip fusion-linkedin fusion-icon-linkedin" style="color:#000000;background-color:#ffffff;border-color:#ffffff;border-radius:50%;" href="https://www.linkedin.com/company/arkieva" target="_blank" rel="nofollow" data-placement="top" data-title="LinkedIn" data-toggle="tooltip" title="LinkedIn"><span class="screen-reader-text">LinkedIn</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-twitter fusion-icon-twitter" style="color:#000000;background-color:#ffffff;border-color:#ffffff;border-radius:50%;" href="https://twitter.com/Arkieva" target="_blank" rel="nofollow" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="Twitter"><span class="screen-reader-text">Twitter</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-facebook fusion-icon-facebook" style="color:#000000;background-color:#ffffff;border-color:#ffffff;border-radius:50%;" href="https://www.facebook.com/arkieva/" target="_blank" rel="nofollow" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="Facebook"><span class="screen-reader-text">Facebook</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-youtube fusion-icon-youtube" style="color:#000000;background-color:#ffffff;border-color:#ffffff;border-radius:50%;" href="https://www.youtube.com/user/arkieva" target="_blank" rel="nofollow" data-placement="top" data-title="YouTube" data-toggle="tooltip" title="YouTube"><span class="screen-reader-text">YouTube</span></a><a  class="fusion-social-network-icon fusion-tooltip fusion-rss fusion-icon-rss" style="color:#000000;background-color:#ffffff;border-color:#ffffff;border-radius:50%;" href="https://blog.arkieva.com/feed/" target="_blank" rel="nofollow" data-placement="top" data-title="Rss" data-toggle="tooltip" title="Rss"><span class="screen-reader-text">Rss</span></a></div></div></div>
+
+			</div> <!-- fusion-fusion-copyright-content -->
+		</div> <!-- fusion-row -->
+	</footer> <!-- #footer -->
+				</div> <!-- fusion-footer -->
+
+									</div> <!-- wrapper -->
+
+								<a class="fusion-one-page-text-link fusion-page-load-link"></a>
+
+		<!-- ngg_resource_manager_marker --><script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/cta/shared//shortcodes/js/spin.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"arkieva"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.17'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.17"},"disqusIdentifier":"3609 https:\/\/blog.arkieva.com\/?p=3609","disqusShortname":"arkieva","disqusTitle":"How Does My Open Order History Impact My Sales Prediction?","disqusUrl":"https:\/\/blog.arkieva.com\/sales-prediction\/","postId":"3609"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.17'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=202012'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/social-polls-by-opinionstage/public/js/shortcodes.js?ver=19.6.22'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/monarch/js/idle-timer.min.js?ver=1.4.12'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"https:\/\/blog.arkieva.com\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/blog.arkieva.com\/sales-prediction\/","stats_nonce":"390b56e8ba","share_counts":"d951375849","follow_counts":"853ac1a1e6","total_counts":"14db08f26e","media_single":"d7f1ae22a7","media_total":"25aeea481b","generate_all_window_nonce":"ca33af9438","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/monarch/js/custom.js?ver=1.4.12'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2020Maraa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/isotope.js?ver=3.0.4'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.infinitescroll.js?ver=2.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-core/js/min/avada-faqs.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/modernizr.js?ver=3.3.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.fitvids.js?ver=1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionVideoGeneralVars = {"status_vimeo":"1","status_yt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/fusion-video-general.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionLightboxVideoVars = {"lightbox_video_width":"1280","lightbox_video_height":"720"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.ilightbox.js?ver=2.2.3'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.mousewheel.js?ver=3.0.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionLightboxVars = {"status_lightbox":"1","lightbox_gallery":"1","lightbox_skin":"metro-white","lightbox_title":"1","lightbox_arrows":"1","lightbox_slideshow_speed":"5000","lightbox_autoplay":"","lightbox_opacity":"0.90","lightbox_desc":"1","lightbox_social":"1","lightbox_deeplinking":"1","lightbox_path":"vertical","lightbox_post_images":"1","lightbox_animation_speed":"Normal"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-lightbox.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/imagesLoaded.js?ver=3.1.8'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/packery.js?ver=2.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaPortfolioVars = {"lightbox_behavior":"all","infinite_finished_msg":"<em>All items displayed.<\/em>","infinite_blog_text":"<em>Loading the next set of posts...<\/em>","content_break_point":"800"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-core/js/min/avada-portfolio.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/cssua.js?ver=2.1.28'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.waypoints.js?ver=2.0.3'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-waypoints.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionAnimationsVars = {"disable_mobile_animate_css":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-animations.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/library/jquery.countTo.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.appear.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionCountersBox = {"counter_box_speed":"1000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-counters-box.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.fade.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.requestAnimationFrame.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/fusion-parallax.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionVideoBgVars = {"status_vimeo":"1","status_yt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/fusion-video-bg.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionContainerVars = {"content_break_point":"800","container_hundred_percent_height_mobile":"0","is_sticky_header_transparent":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-container.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.collapse.js?ver=3.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionEqualHeightVars = {"content_break_point":"800"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-equal-heights.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-toggles.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-title.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/library/Chart.js?ver=2.7.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-chart.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.transition.js?ver=3.3.6'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.tab.js?ver=3.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionTabVars = {"content_break_point":"800"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-tabs.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/library/jquery.event.move.js?ver=2.0'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-image-before-after.js?ver=1.0'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-syntax-highlighter.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/library/jquery.countdown.js?ver=1.0'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-countdown.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.cycle.js?ver=3.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionTestimonialVars = {"testimonials_speed":"4000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-testimonials.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-gallery.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-flip-boxes.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionBgImageVars = {"content_break_point":"800"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-column-bg-image.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-column.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionRecentPostsVars = {"infinite_loading_text":"<em>Loading the next set of posts...<\/em>","infinite_finished_msg":"<em>All items displayed.<\/em>","slideshow_autoplay":"1","slideshow_speed":"7000","pagination_video_slide":"","status_yt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-recent-posts.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.modal.js?ver=3.1.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-modal.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-progress.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-events.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-content-boxes.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.easyPieChart.js?ver=2.1.7'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-counters-circle.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionMapsVars = {"admin_ajax":"https:\/\/blog.arkieva.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.fusion_maps.js?ver=2.2.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-google-map.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/vimeoPlayer.js?ver=2.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionVideoVars = {"status_vimeo":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-video.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.hoverintent.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-vertical-menu-widget.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/lazysizes.js?ver=4.1.5'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.tooltip.js?ver=3.3.5'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.popover.js?ver=3.3.5'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.carouFredSel.js?ver=6.2.1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.easing.js?ver=1.3'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.flexslider.js?ver=2.2.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.hoverflow.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.placeholder.js?ver=2.0.7'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.touchSwipe.js?ver=1.6.6'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-alert.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionCarouselVars = {"related_posts_speed":"2750","carousel_speed":"2750"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-carousel.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionFlexSliderVars = {"status_vimeo":"1","page_smoothHeight":"false","slideshow_autoplay":"1","slideshow_speed":"7000","pagination_video_slide":"","status_yt":"1","flex_smoothHeight":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-flexslider.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-popover.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-tooltip.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-sharing-box.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionBlogVars = {"infinite_blog_text":"<em>Loading the next set of posts...<\/em>","infinite_finished_msg":"<em>All items displayed.<\/em>","slideshow_autoplay":"1","slideshow_speed":"7000","pagination_video_slide":"","status_yt":"1","lightbox_behavior":"all","blog_pagination_type":"Pagination","flex_smoothHeight":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-blog.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-button.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-general-global.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaHeaderVars = {"header_position":"top","header_layout":"v3","header_sticky":"1","header_sticky_type2_layout":"menu_only","header_sticky_shadow":"1","side_header_break_point":"1099","header_sticky_mobile":"0","header_sticky_tablet":"0","mobile_menu_design":"modern","sticky_header_shrinkage":"0","nav_height":"135","nav_highlight_border":"0","nav_highlight_style":"bar","logo_margin_top":"10px","logo_margin_bottom":"10px","layout_mode":"wide","header_padding_top":"0px","header_padding_bottom":"0px","offset_scroll":"full"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-header.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaMenuVars = {"header_position":"Top","logo_alignment":"Left","header_sticky":"1","header_sticky_mobile":"0","header_sticky_tablet":"0","side_header_break_point":"1099","mobile_menu_design":"modern","dropdown_goto":"Go to...","mobile_nav_cart":"Shopping Cart","mobile_submenu_open":"Open Sub Menu Of","mobile_submenu_close":"Close Sub Menu Of","submenu_slideout":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-menu.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionScrollToAnchorVars = {"content_break_point":"800","container_hundred_percent_height_mobile":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-scroll-to-anchor.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fusionTypographyVars = {"site_width":"1240px","typography_responsive":"1","typography_sensitivity":"0.60","typography_factor":"1.50","elements":"h1, h2, h3, h4, h5, h6"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion-responsive-typography.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/library/bootstrap.scrollspy.js?ver=3.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaCommentVars = {"title_style_type":"single solid","title_margin_top":"0%","title_margin_bottom":"30px"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-comments.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-general-footer.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-quantity.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-scrollspy.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-select.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaSidebarsVars = {"header_position":"top","header_layout":"v3","header_sticky":"1","header_sticky_type2_layout":"menu_only","side_header_break_point":"1099","header_sticky_tablet":"0","sticky_header_shrinkage":"0","nav_height":"135","content_break_point":"800"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-sidebars.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/library/jquery.sticky-kit.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-tabs-widget.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var toTopscreenReaderText = {"label":"Go to Top"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/library/jquery.toTop.js?ver=1.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaToTopVars = {"status_totop_mobile":"1","totop_position":"right","totop_scroll_down_only":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-to-top.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-drop-down.js?ver=5.9'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/library/jquery.elasticslider.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaElasticSliderVars = {"tfes_autoplay":"1","tfes_animation":"sides","tfes_interval":"3000","tfes_speed":"800","tfes_width":"150"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/themes/Avada/assets/min/js/general/avada-elastic-slider.js?ver=5.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var avadaFusionSliderVars = {"side_header_break_point":"1099","slider_position":"below","header_transparency":"0","mobile_header_transparency":"0","header_position":"Top","content_break_point":"800","status_vimeo":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/fusion-core/js/min/avada-fusion-slider.js?ver=1'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-content/plugins/bloom/core/admin/js/common.js?ver=3.20.2'></script>
+<script type='text/javascript' src='https://3uvqeisena11zr8q939vd5i1-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<div class="et_social_pin_images_outer">
+					<div class="et_social_pinterest_window">
+						<div class="et_social_modal_header"><h3>Pin It on Pinterest</h3><span class="et_social_close"></span></div>
+						<div class="et_social_pin_images" data-permalink="https://blog.arkieva.com/sales-prediction/" data-title="How Does My Open Order History Impact My Sales Prediction?" data-post_id="3609"></div>
+					</div>
+				</div><div class="et_social_sidebar_networks et_social_visible_sidebar et_social_slideright et_social_animated et_social_rectangle et_social_sidebar_flip et_social_space et_social_mobile_off">
+					
+					<ul class="et_social_icons_container"><li class="et_social_linkedin">
+									<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" class="et_social_share" rel="nofollow" data-social_name="linkedin" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_linkedin"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_facebook">
+									<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;t=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_twitter">
+									<a href="http://twitter.com/share?text=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F&#038;url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;via=Arkieva" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_stumbleupon">
+									<a href="http://www.stumbleupon.com/badge?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" class="et_social_share" rel="nofollow" data-social_name="stumbleupon" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_stumbleupon"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_tumblr">
+									<a href="https://www.tumblr.com/share?v=3&#038;u=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;t=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" class="et_social_share" rel="nofollow" data-social_name="tumblr" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_tumblr"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_reddit">
+									<a href="http://www.reddit.com/submit?url=https%3A%2F%2Fblog.arkieva.com%2Fsales-prediction%2F&#038;title=How%20Does%20My%20Open%20Order%20History%20Impact%20My%20Sales%20Prediction%3F" class="et_social_share" rel="nofollow" data-social_name="reddit" data-post_id="3609" data-social_type="share" data-location="sidebar">
+										<i class="et_social_icon et_social_icon_reddit"></i>
+										
+										
+										<span class="et_social_overlay"></span>
+									</a>
+								</li><li class="et_social_all_button">
+								<a href="#" rel="nofollow" data-location="sidebar" data-page_id="3609" data-permalink="https://blog.arkieva.com/sales-prediction/" data-title="How Does My Open Order History Impact My Sales Prediction?" class="et_social_open_all">
+									<i class="et_social_icon et_social_icon_all_button"></i>
+									<span class="et_social_overlay"></span>
+								</a>
+							</li></ul>
+					<span class="et_social_hide_sidebar et_social_icon"></span>
+				</div>
+<!-- DO NOT COPY THIS SNIPPET! &mdash; HubSpot Identification Code -->
+<script type="text/javascript">
+(function(d,w) {
+w._hsq = w._hsq || [];
+w._hsq.push(["setContentType", "blog-post"]);
+})(document, window);
+</script>
+<!-- End of HubSpot Identification Code &mdash; DO NOT COPY THIS SNIPPET! -->
+
+<!-- Start of Async HubSpot Analytics Code for WordPress v1.2.1 -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2682580.js"></script>
+<!-- End of Async HubSpot Analytics Code -->
+	<div style="display:none">
+	<div class="grofile-hash-map-edad7c55ab60cef8f7a192702124e8b0">
+	</div>
+	</div>
+				<script type="text/javascript">
+				jQuery( document ).ready( function() {
+					var ajaxurl = 'https://blog.arkieva.com/wp-admin/admin-ajax.php';
+					if ( 0 < jQuery( '.fusion-login-nonce' ).length ) {
+						jQuery.get( ajaxurl, { 'action': 'fusion_login_nonce' }, function( response ) {
+							jQuery( '.fusion-login-nonce' ).html( response );
+						});
+					}
+				});
+				</script>
+				<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Blog Subscription Popup --><div id="om-phyigyxtj4rv54b7gppq-holder"></div><script>var phyigyxtj4rv54b7gppq,phyigyxtj4rv54b7gppq_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){phyigyxtj4rv54b7gppq_poll(function(){if(window['om_loaded']){if(!phyigyxtj4rv54b7gppq){phyigyxtj4rv54b7gppq=new OptinMonsterApp();return phyigyxtj4rv54b7gppq.init({"u":"29935.767565","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.optmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;phyigyxtj4rv54b7gppq=new OptinMonsterApp();phyigyxtj4rv54b7gppq.init({"u":"29935.767565","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->		<script type="text/javascript">var o2huu0neaudi0smz6v7v_shortcode = true;var c7ycztz3nt6lsiphdxzp_shortcode = true;var phyigyxtj4rv54b7gppq_shortcode = true;</script>
+		<script type='text/javascript' src='https://stats.wp.com/e-202012.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.5.3',blog:'122043982',post:'3609',tz:'-4',srv:'blog.arkieva.com'} ]);
+	_stq.push([ 'clickTrackerInit', '122043982', '3609' ]);
+</script>
+		<script type="text/javascript">var omapi_localized = { ajax: 'https://blog.arkieva.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '4ef4d138c1', slugs: {"o2huu0neaudi0smz6v7v":{"slug":"o2huu0neaudi0smz6v7v","mailpoet":false},"c7ycztz3nt6lsiphdxzp":{"slug":"c7ycztz3nt6lsiphdxzp","mailpoet":false},"phyigyxtj4rv54b7gppq":{"slug":"phyigyxtj4rv54b7gppq","mailpoet":false}} };</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":3609,"object_key":"post","object_type":"post","term_ids":[7,6,615,614,616,613,612]};</script>
+			</body>
+</html>
